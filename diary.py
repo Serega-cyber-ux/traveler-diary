@@ -21,7 +21,7 @@ def add_entry(diary):
 
     if not text:
         print("Запис не може бути порожнім.")
-        return
+        return 
 
     # Наступний номер дня визначається за кількістю записів.
     day = max((entry["day"] for entry in diary), default=0) + 1
